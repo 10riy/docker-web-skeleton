@@ -1,6 +1,9 @@
-# Docker Skeleton for web application on NGINX, PHP, POSTGRES, NODEJS
+# Docker skeleton for web application
 
-## Structure project
+## Docker Skeleton for web application on NGINX, PHP, POSTGRES, NODEJS
+
+### Structure project
+```
 .
 ├── docker  # Docker files
 │   ├── nginx
@@ -21,6 +24,7 @@
 ├── Makefile
 ├── CHANGELOG.md
 └── README.md
+```
 
 ### Installation
 Config for docker in root project folder
