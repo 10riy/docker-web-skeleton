@@ -33,7 +33,7 @@ $ cp .env.example .env
 
 Create volume for postgres
 ```sh
-$ docker volume create --name pgdata -d local
+$ docker volume create --name app_pgdata -d local
 ```
 
 Run and  enter in container php
