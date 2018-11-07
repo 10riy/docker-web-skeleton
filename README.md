@@ -21,8 +21,7 @@
 ├── src  # Source code
 │   └── ...
 ├── docker-compose.yml
-├── Makefile
-├── CHANGELOG.md
+├── LICENSE.md
 └── README.md
 ```
 
