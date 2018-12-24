@@ -18,8 +18,6 @@
 │   └── postgresql
 │       ├── Dockerfile
 │       └── ...
-├── src  # Source code
-│   └── ...
 ├── docker-compose.yml
 ├── LICENSE.md
 └── README.md
