@@ -46,11 +46,10 @@ services:
     container_name: ${APP_PREFIX}-postgres
     restart: always
     volumes:
-      - app_pgdata:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
     ports:
       - "${POSTGRES_PORT}:5432"
     environment:
-      - PGDATA=/var/lib/postgresql/data
       - POSTGRES_DB=${POSTGRES_NAME}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
@@ -58,8 +57,7 @@ services:
       - appnet
 
 volumes:
-  app_pgdata:
-    external: true
+  db:
 
 networks:
   appnet:

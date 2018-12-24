@@ -24,14 +24,9 @@
 ```
 
 ### Installation
-Config for docker in root project folder
+Will write down your configuration data
 ```sh
 $ cp .env.example .env
-```
-
-Create volume for postgres
-```sh
-$ docker volume create --name app_pgdata -d local
 ```
 
 Run and  enter in container php
