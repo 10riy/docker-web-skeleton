@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     environment:
       XDEBUG_CONFIG: remote_host=${XDEBUG_REMOTE_HOST}
-      PHP_IDE_CONFIG: serverName=${XDEBUG_REMOTE_HOST}
+      PHP_IDE_CONFIG: serverName=${XDEBUG_SERVER_NAME}
     container_name: ${APP_PREFIX}-php
     volumes:
       - ${APP_PATH}:${DOCUMENT_ROOT}
