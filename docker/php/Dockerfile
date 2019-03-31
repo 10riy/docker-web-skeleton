@@ -13,7 +13,9 @@ RUN apt-get update && apt-get install -y \
 
 # PHP Extensions
 RUN docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql zip pdo_pgsql pgsql \
-&& docker-php-ext-install -j$(nproc) gd
+&& docker-php-ext-install -j$(nproc) gd \
+&& pecl install xdebug \
+&& docker-php-ext-enable xdebug
 
 # Memory Limit
 RUN echo "memory_limit=1024M" > $PHP_INI_DIR/conf.d/memory-limit.ini
