@@ -2,27 +2,6 @@
 
 ## Docker Skeleton for web application on NGINX, PHP, POSTGRES, NODEJS
 
-### Structure project
-```
-.
-├── docker  # Docker files
-│   ├── nginx
-│   │   ├── Dockerfile
-│   │   └── ...
-│   ├── node
-│   │   ├── Dockerfile
-│   │   └── ...
-│   ├── php
-│   │   ├── Dockerfile
-│   │   └── ...
-│   └── postgresql
-│       ├── Dockerfile
-│       └── ...
-├── docker-compose.yml
-├── LICENSE.md
-└── README.md
-```
-
 ### Installation
 Will write down your configuration data
 ```sh
@@ -34,3 +13,8 @@ Run and  enter in container php
 $ docker-compose up -d
 ```
 
+### Xdebug
+If firewall is enabled
+```sh
+$ ufw allow in from 172.16.0.0/12 to any port 9000 comment xdebug
+```
