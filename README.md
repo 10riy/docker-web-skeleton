@@ -13,8 +13,9 @@ Run and  enter in container php
 $ docker-compose up -d
 ```
 
-### Xdebug
-If firewall is enabled
+## Known Issues
+### Xdebug and firewall in Linux
+If xdebug does not work when firewall is on, try this
 ```sh
 $ ufw allow in from 172.16.0.0/12 to any port 9000 comment xdebug
 ```
